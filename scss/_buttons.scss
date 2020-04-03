@@ -1,0 +1,41 @@
+.btn-accent {
+    @include font-monserrat;
+
+    margin: 0;
+    padding: 16px 35px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    transition: .5s;
+    color: $color-white;
+    background: linear-gradient(to right, #f3985b, #fe4fa7);
+    outline: none;
+    &:hover {
+        cursor: pointer;
+        background: linear-gradient(to right, #fe4fa7,  #f3985b);
+        opacity: .8;
+        transition: .5s;
+    }
+}
+
+.btn-regular {
+    @include font-monserrat;
+
+    margin: 0;
+    padding: 16px 35px;
+    font-size: 16px;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    background: $color-white;
+    outline: none;
+    transition: .5s;
+    &:hover {
+        cursor: pointer;
+        border-color: #fe4fa7;
+        color: #fe4fa7;
+        transition: .5s;
+    }
+    &.free {
+        border: none;
+    }
+}

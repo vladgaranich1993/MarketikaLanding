@@ -1,0 +1,47 @@
+.section-founder {
+    padding-top: 34px;
+    background-color: #f6fafd;
+
+    .section-inner {
+        display: flex;
+    }
+    // &__img {
+    //     align-self: flex-end;
+    // }
+    &__content {
+       
+        &-text {
+            font-size: 24px;
+            font-weight: 200;
+            line-height: 40px;
+        }
+        &-name {
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 29px;
+        }
+        &-post {
+            font-size: 20px;
+            line-height: 29px;
+            font-weight: 400;
+        }
+    }
+    @media(max-width: $screen-md-max) {
+        .section-inner {
+            flex-direction: column-reverse;
+        }
+        &__content {
+            margin-bottom: 40px;
+        }
+        &__img {
+
+        }
+    }
+
+    @media(min-width: $screen-sm) {
+        &__content {
+            align-self: center;
+            margin-left: 50px;
+        }
+    }
+}

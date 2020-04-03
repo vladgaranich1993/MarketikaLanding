@@ -1,0 +1,26 @@
+.section-free {
+    background-image: linear-gradient(to right, #fe985b 0%, #fe4fa7 100%);
+    text-align: center;
+    padding: 120px 0;
+    &__title {
+        margin-bottom: 40px;
+        font-size: 55px;
+        font-weight: 700;
+        line-height: 60px;
+        color: $color-white
+    }
+    &__description {
+        margin: 0 auto 40px;
+        
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        color: $color-white;
+    }
+
+    @media(min-width: $screen-lg) {
+        &__description {
+            width: 50%;
+        }
+    }
+}

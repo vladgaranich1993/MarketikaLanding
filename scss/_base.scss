@@ -1,0 +1,40 @@
+body {
+    @include font-lato;
+    color: $color-main;
+}
+
+img {
+    @media(max-width: $screen-xs-max) {
+        max-width: 100%;
+    }
+}
+
+.section-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.section-outer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.description-item {
+    display: flex;
+    flex-direction: column;
+    &__icon {
+        margin-bottom: 20px;
+    }
+    &__subtitle {
+        margin-top: 30px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    &__text {
+        margin-top: 14px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 28px;
+        color: #6c6c6c;
+    }
+}
